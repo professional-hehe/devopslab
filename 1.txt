@@ -8,5 +8,11 @@ click y
 cd artifact dir
 mvn validate
 mvn compile
+if error(start pom.xml)
+mvn compile
 mvn test
 mvn package
+mvn verify
+mvn install
+cd target
+java -cp <artifact> -1.0-SNAPSHOT.jar <package>.App
