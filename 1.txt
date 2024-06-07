@@ -1,0 +1,12 @@
+enter grpid 
+enter artifactid
+enter version
+enter package
+
+click y
+
+cd artifact dir
+mvn validate
+mvn compile
+mvn test
+mvn package
